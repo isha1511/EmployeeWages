@@ -1,16 +1,16 @@
 import java.util.*;
 public class EmployeeWage{
-    public final int IS_PART_TIME = 1;
-    public final int IS_FULL_TIME = 2;
+    public static final int IS_PART_TIME = 1;
+    public static final int IS_FULL_TIME = 2;
+    private static int wagePerHrs=20;
+    private static int numOfWorkingDays=20;
+    private static int numOfWorkingHrs=160;
     
-        public void calculateEmpWage() {
+        public static void calculateEmpWage() {
             int empHrs;
             int totalEmpHrs = 0; 
             int totalEmpWage=0;
             int totalWorkingDays=0;
-            int wagePerHrs=20;
-            int numOfWorkingDays=20;
-            int numOfWorkingHrs=160;
 
             while (totalEmpHrs <= numOfWorkingHrs && totalWorkingDays <= numOfWorkingDays) {
                  Random random = new Random();
